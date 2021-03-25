@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <Space android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"
+                      android:id="@+id/text_hungry"
+                      android:text="Уровень голода"
+
+            />
+            <Space android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"
+                      android:id="@+id/text_happy"
+                      android:text="Уровень счастья"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:id="@+id/text_time"
+                      android:text="Время"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"
+                      android:id="@+id/text_clean"
+                      android:text="Уровень чистоты"
+            />
+            <Space android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"
+                      android:id="@+id/text_tired"
+                      android:text="Уровень усталости"
+            />
+            <Space android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <Space android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"/>
+            <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/progressBar_hungry" android:layout_weight="2"
+                    android:progressTint="#D31818"/>
+            <Space android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"/>
+            <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/progressBar_happy" android:layout_weight="2"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"
+                      android:id="@+id/time"
+            />
+            <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/progressBar_clean" android:layout_weight="2"
+            />
+            <Space android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"/>
+            <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/progressBar_tired" android:layout_weight="2"
+            />
+            <Space android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+        >
+            <ImageButton android:layout_width="match_parent" android:layout_height="21dp"
+                         android:layout_weight="1"
+                         android:id="@+id/btn_feed"
+                         android:src="@drawable/feed2"
+                         android:background="#00FFFFFF"
+                         android:onClick="Feed"/>
+
+            <ImageButton android:layout_width="match_parent"
+                         android:layout_height="15dp"
+                         android:layout_weight="1"
+                         android:id="@+id/btn_pet"
+                         android:src="@drawable/pet1"
+                         android:background="#00FFFFFF"
+            />
+            <ImageButton android:layout_width="match_parent"
+                         android:layout_height="32dp"
+                         android:layout_weight="1"
+                         android:id="@+id/btn_clean"
+                         android:src="@drawable/clean1"
+                         android:background="#00FFFFFF"
+
+            />
+            <ImageButton android:layout_width="match_parent"
+                         android:layout_height="23dp"
+                         android:layout_weight="1"
+                         android:id="@+id/btn_walk"
+                         android:src="@drawable/walk2"
+                         android:background="#00FFFFFF"/>
+            <ImageButton android:layout_width="match_parent"
+                         android:layout_height="26dp"
+                         android:layout_weight="1"
+                         android:id="@+id/btn_sleep"
+                         android:src="@drawable/sleep2"
+                         android:background="#00FFFFFF"
+            />
+
+
+        </LinearLayout>
+        <Space android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+        />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
